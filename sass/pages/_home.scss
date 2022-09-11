@@ -1,3 +1,54 @@
 @use "../abstract/variables";
 @use "../abstract/mixins";
 
+.home {
+    .home-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 90px;
+    }
+    &__content {
+        color: variables.$main-text-color;
+        h1 {
+            font: {
+                family: 'Comfortaa', cursive;
+                weight: 700;
+                size: 50px;
+            }
+        }
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font: {
+                family: 'Nunito', sans-serif;
+                weight: 600;
+                size: 20px;
+            }
+            .fa-location-dot {
+                color: #94716B;
+            }
+        }
+        p {
+            margin-top: 10px;
+            font: {
+                family: 'Nunito', sans-serif;
+                weight: 400;
+                size: 26px;
+            }
+        }
+        .main-link {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: variables.$gradient-bg-color;
+            color: variables.$text-white;
+            border-radius: 4px;
+        }
+    }
+    &__img {
+        img {
+            border-radius: 4px;
+        }
+    }
+}

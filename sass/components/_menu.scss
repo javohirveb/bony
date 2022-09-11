@@ -46,12 +46,13 @@ header {
                 family: 'Nunito', sans-serif;
             }
         }
-        a {
+        .main-link {
             font-size: 14px;
             display: inline-block;
             padding: 5px 12px;
             color: variables.$text-white;
             background-color: variables.$bg-green;
+            border-radius: 4px;
         }
     }
 }
@@ -94,7 +95,7 @@ header {
                     size: 14px;
                 }
             }
-            a {
+            .main-link {
                 font-size: 18px;
                 padding: 12px 81px;
             }

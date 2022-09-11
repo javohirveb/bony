@@ -49,12 +49,13 @@ header {
   font-size: 18px;
   font-family: "Nunito", sans-serif;
 }
-.nav__call a {
+.nav__call .main-link {
   font-size: 14px;
   display: inline-block;
   padding: 5px 12px;
   color: white;
   background-color: #80A529;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -85,11 +86,53 @@ header {
   .nav__call p {
     font-size: 14px;
   }
-  .nav__call a {
+  .nav__call .main-link {
     font-size: 18px;
     padding: 12px 81px;
   }
 }
+.home .home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 90px;
+}
+.home__content {
+  color: #1E1E1E;
+}
+.home__content h1 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+.home__content h4 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.home__content h4 .fa-location-dot {
+  color: #94716B;
+}
+.home__content p {
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+.home__content .main-link {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+  color: white;
+  border-radius: 4px;
+}
+.home__img img {
+  border-radius: 4px;
+}
+
 header {
   width: 100%;
   padding: 20px 0;
@@ -120,6 +163,12 @@ header {
   .container {
     width: 1200px;
   }
+}
+.home {
+  background: url(../images/bg-home-right.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */
