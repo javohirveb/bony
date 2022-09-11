@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo img {
+  margin-right: 15px;
+}
+.nav__logo--content {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+.nav__logo--content h4 {
+  font-size: 20px;
+}
+.nav__logo--content p {
+  font-size: 14px;
+}
+.nav__lists {
+  display: none;
+}
+.nav__call {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.nav__call p {
+  cursor: copy;
+  color: white;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+.nav__call a {
+  font-size: 14px;
+  display: inline-block;
+  padding: 7px 35px;
+  color: white;
+  background-color: #80A529;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__logo--content {
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+  }
+  .nav__logo--content h4 {
+    font-size: 25px;
+  }
+  .nav__logo--content p {
+    font-size: 18px;
+  }
+  .nav__lists {
+    display: flex;
+  }
+  .nav__lists--item {
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 20px;
+  }
+  .nav__lists--item a {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .nav__call p {
+    font-size: 14px;
+  }
+  .nav__call a {
+    font-size: 18px;
+    padding: 12px 81px;
+  }
+}
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

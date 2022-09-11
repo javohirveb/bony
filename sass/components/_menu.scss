@@ -1,0 +1,103 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+header {
+    background: variables.$gradient-bg-color;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 15px;
+        }
+        &--content {
+            color: variables.$text-white;
+            font: {
+                family: 'Comfortaa', cursive;
+                weight: 700;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    &__lists {
+        display: none;
+    }
+    &__call {
+        font: {
+            family: 'Nunito', sans-serif;
+            weight: 600;
+        }
+        margin-left: 20px;
+        p {
+            cursor: copy;
+            color: variables.$text-white;
+            font: {
+                size: 18px;
+                family: 'Nunito', sans-serif;
+            }
+        }
+        a {
+            font-size: 14px;
+            display: inline-block;
+            padding: 7px 35px;
+            color: variables.$text-white;
+            background-color: variables.$bg-green;
+        }
+    }
+}
+
+@include mixins.media-md {
+    .nav {
+        &__logo {
+            &--content {
+                font: {
+                    family: 'Comfortaa', cursive;
+                    weight: 700;
+                }
+                h4 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__lists {
+            display: flex;
+            &--item {
+                text-transform: uppercase;
+                list-style: none;
+                margin-right: 20px;
+                a {
+                    color: variables.$text-white;
+                    font: {
+                        family: 'Nunito', sans-serif;
+                        weight: 400;
+                        size: 16px;
+                    }
+                }
+            }
+        }
+        &__call {
+            p {
+                font: {
+                    size: 14px;
+                }
+            }
+            a {
+                font-size: 18px;
+                padding: 12px 81px;
+            }
+        }
+    }
+}
