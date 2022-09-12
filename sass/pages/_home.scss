@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 90px;
+        padding: 85px 30px;
     }
     &__content {
         color: variables.$main-text-color;
@@ -14,27 +14,27 @@
             font: {
                 family: 'Comfortaa', cursive;
                 weight: 700;
-                size: 50px;
+                size: 30px;
             }
         }
         h4 {
-            margin-top: 20px;
-            margin-bottom: 25px;
+            margin-top: 30px;
+            margin-bottom: 35px;
             font: {
                 family: 'Nunito', sans-serif;
                 weight: 600;
-                size: 20px;
+                size: 15px;
             }
             .fa-location-dot {
                 color: #94716B;
             }
         }
         p {
-            margin-top: 10px;
+            margin-top: 20px;
             font: {
                 family: 'Nunito', sans-serif;
                 weight: 400;
-                size: 26px;
+                size: 20px;
             }
         }
         .main-link {
@@ -47,8 +47,37 @@
         }
     }
     &__img {
+        display: none;
         img {
             border-radius: 4px;
         }
+    }
+}
+
+
+@include mixins.media-md {
+    
+    .home {
+        .home-container {
+            padding: 25px 90px;
+        }
+        &__content {
+            h1 {
+                font-size: 50px;
+            }
+            h4 {
+                margin-top: 30px;
+                margin-bottom: 35px;
+                font-size: 20px;
+            }
+            p {
+                font-size: 26px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .home__img {
+        display: inline-block;
     }
 }
