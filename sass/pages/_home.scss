@@ -2,7 +2,7 @@
 @use "../abstract/mixins";
 
 .home {
-    .home-container {
+    &-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -58,8 +58,9 @@
 @include mixins.media-md {
     
     .home {
-        .home-container {
-            padding: 25px 90px;
+        padding-bottom: 60px;
+        &-container {
+            padding: 55px 90px;
         }
         &__content {
             h1 {
@@ -75,9 +76,8 @@
                 margin-top: 20px;
             }
         }
-    }
-
-    .home__img {
-        display: inline-block;
+        &__img {
+            display: inline-block;
+        }
     }
 }

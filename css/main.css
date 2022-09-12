@@ -91,7 +91,7 @@ header {
     padding: 12px 81px;
   }
 }
-.home .home-container {
+.home-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,8 +137,11 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .home .home-container {
-    padding: 25px 90px;
+  .home {
+    padding-bottom: 60px;
+  }
+  .home-container {
+    padding: 55px 90px;
   }
   .home__content h1 {
     font-size: 50px;
@@ -154,6 +157,64 @@ header {
   }
   .home__img {
     display: inline-block;
+  }
+}
+.occupy {
+  background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+  padding: 30px 0;
+}
+.occupy h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.occupy__flex {
+  display: flex;
+  position: relative;
+}
+.occupy__form {
+  width: 100%;
+}
+.occupy__form > input {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 50px;
+  padding: 14px;
+  outline: none;
+  margin: 5px;
+}
+.occupy__form-label {
+  width: 100%;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.occupy img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .occupy {
+    padding: 30px 0;
+  }
+  .occupy h1 {
+    font-size: 30px;
+  }
+  .occupy__form {
+    width: 60%;
+  }
+  .occupy__form > input {
+    width: 48%;
+  }
+  .occupy img {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: -110px;
   }
 }
 header {
