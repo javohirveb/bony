@@ -31,7 +31,6 @@
             margin: 5px;
         }
         &-label {
-            width: 100%;
             color: variables.$text-white;
             font: {
                 family: 'Nunito', sans-serif;
@@ -39,6 +38,9 @@
                 weight: 400;
             }
         }
+    }
+    &__label {
+        display: inline-block;
     }
     img {
         display: none;
@@ -58,6 +60,9 @@
             > input {
                 width: 48%;
             }
+        }
+        &__label {
+            display: none;
         }
         img {
             display: inline-block;

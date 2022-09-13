@@ -49,13 +49,16 @@ header {
   font-size: 18px;
   font-family: "Nunito", sans-serif;
 }
-.nav__call .main-link {
+
+.main-link {
   font-size: 14px;
   display: inline-block;
   padding: 5px 12px;
   color: white;
   background-color: #80A529;
   border-radius: 4px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,7 +89,7 @@ header {
   .nav__call p {
     font-size: 14px;
   }
-  .nav__call .main-link {
+  .main-link {
     font-size: 18px;
     padding: 12px 81px;
   }
@@ -187,11 +190,13 @@ header {
   margin: 5px;
 }
 .occupy__form-label {
-  width: 100%;
   color: white;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+.occupy__label {
+  display: inline-block;
 }
 .occupy img {
   display: none;
@@ -210,11 +215,82 @@ header {
   .occupy__form > input {
     width: 48%;
   }
+  .occupy__label {
+    display: none;
+  }
   .occupy img {
     display: inline-block;
     position: absolute;
     right: 40px;
     top: -110px;
+  }
+}
+.room {
+  margin-top: 80px;
+}
+.room__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.room__img li {
+  list-style: none;
+  position: relative;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+.room__img li img {
+  border-radius: 5px;
+}
+.room__img li p {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+}
+.room__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .room__img li {
+    margin-right: 8px;
+    margin-top: 0px;
+  }
+  .fa-chevron-left, .fa-chevron-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .fa-chevron-left {
+    top: 40%;
+    left: -20px;
+    background: #C9B8B5;
+  }
+  .fa-chevron-right {
+    top: 40%;
+    left: 270px;
+    background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
   }
 }
 header {
@@ -248,6 +324,19 @@ header {
     width: 1200px;
   }
 }
+body {
+  background: url(../images/background\ pattern.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.heading-one {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 40px;
+}
+
 .home {
   background: url(../images/bg-home-right.jpg);
   background-position: right;

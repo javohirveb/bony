@@ -2,8 +2,23 @@
 @use "components/menu";
 @use "pages/home";
 @use "pages/occupy";
+@use "pages/room";
 @use "layout";
 
+body {
+    background: url(../images/background\ pattern.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.heading-one {
+    font: {
+        size: 30px;
+        weight: 700;
+        family:  'Comfortaa', cursive;
+    }
+    margin-bottom: 40px;
+}
 
 .home {
     background: url(../images/bg-home-right.jpg);

@@ -46,14 +46,18 @@ header {
                 family: 'Nunito', sans-serif;
             }
         }
-        .main-link {
-            font-size: 14px;
-            display: inline-block;
-            padding: 5px 12px;
-            color: variables.$text-white;
-            background-color: variables.$bg-green;
-            border-radius: 4px;
-        }
+    }
+}
+.main-link {
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 12px;
+    color: variables.$text-white;
+    background-color: variables.$bg-green;
+    border-radius: 4px;
+    font: {
+        family: 'Nunito', sans-serif;
+        weight: 600;
     }
 }
 
@@ -95,10 +99,10 @@ header {
                     size: 14px;
                 }
             }
-            .main-link {
-                font-size: 18px;
-                padding: 12px 81px;
-            }
         }
+    }
+    .main-link {
+        font-size: 18px;
+        padding: 12px 81px;
     }
 }
