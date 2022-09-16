@@ -4,6 +4,7 @@
 @use "pages/occupy";
 @use "pages/room";
 @use "pages/about";
+@use "pages/information";
 @use "layout";
 
 body {
@@ -23,6 +24,13 @@ body {
 
 .home {
     background: url(../images/bg-home-right.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information {
+    background: url(../images/Rectangle\ 62.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;

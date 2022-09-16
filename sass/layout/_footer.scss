@@ -1,2 +1,20 @@
 @use "../abstract/variables" as vars;
 @use '../abstract/mixins';
+
+footer {
+    background: vars.$gradient-bg-color;
+    padding: 20px 5px;
+    p {
+        text-align: center;
+        color: vars.$text-white;
+        font: {
+            family: 'Nunito', sans-serif;
+            size: 16px;
+            weight: 500;
+        }
+        a {
+            text-decoration: underline;
+            color: vars.$text-white;
+        }
+    }
+}

@@ -433,9 +433,86 @@ header {
     width: auto;
   }
 }
+.information {
+  padding: 40px 0;
+  margin-top: 80px;
+}
+.information__box {
+  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: 1px solid #F8F8F8;
+  box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+.information__box-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.information__box-item img {
+  margin-right: 10px;
+}
+.information__box-item p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+.information__link {
+  margin-top: 40px;
+  width: 100%;
+}
+.information__link a {
+  background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-between;
+}
+.social-networks__item {
+  list-style: none;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .information {
+    padding: 40px;
+  }
+  .information__box {
+    width: 35%;
+  }
+}
 header {
   width: 100%;
   padding: 20px 0;
+}
+
+footer {
+  background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+  padding: 20px 5px;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer p a {
+  text-decoration: underline;
+  color: white;
 }
 
 .container {
@@ -479,6 +556,13 @@ body {
 
 .home {
   background: url(../images/bg-home-right.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information {
+  background: url(../images/Rectangle\ 62.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
