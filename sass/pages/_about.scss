@@ -1,0 +1,50 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+.about {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    margin-top: 80px;
+    p {
+        margin-right: 30px;
+        font: {
+            size: 16px;
+            family: 'Nunito', sans-serif;
+            weight: 400;
+        }
+    }
+    &__img {
+        position: relative;
+        .fa-chevron-left {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+        }
+        .fa-chevron-right {
+            position: absolute;
+            top: 50%;
+            left: 420px;
+        }
+        img {
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+}
+
+@include mixins.media-md {
+
+    .about {
+        &__container {
+            flex-direction: row;
+        }
+        &__img {
+            img {
+                width: auto;
+            }
+        }
+    }
+}
