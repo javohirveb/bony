@@ -485,6 +485,9 @@ header {
   list-style: none;
   margin-top: 20px;
 }
+.social-networks__item img {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   .information {
